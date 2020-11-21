@@ -209,7 +209,7 @@
 	});
 	
 	// CountDown Js
-	var deadline = 'February 12 2020 10:00:00 GMT+0530';
+	var deadline = 'December 6 2020 10:00:00 GMT+0530';
 		function time_remaining(endtime){
 			var t = Date.parse(endtime) - Date.parse(new Date());
 			var seconds = Math.floor( (t/1000) % 60 );
@@ -219,6 +219,7 @@
 			return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
 		}
 		function run_clock(id,endtime){
+			debugger;
 			var clock = document.getElementById(id);
 			
 			// get spans where our clock numbers are held
