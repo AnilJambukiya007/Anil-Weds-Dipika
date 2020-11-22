@@ -219,9 +219,7 @@
 			return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
 		}
 		function run_clock(id,endtime){
-			debugger;
 			var clock = document.getElementById(id);
-			
 			// get spans where our clock numbers are held
 			var days_span = clock.querySelector('.days');
 			var hours_span = clock.querySelector('.hours');
